@@ -126,6 +126,7 @@
   html {
     scroll-behavior: smooth;
     background-color: #F5F0E8 !important;
+    color-scheme: light !important;
     overscroll-behavior-y: none;
     overscroll-behavior-x: none;
     overflow-x: hidden;
@@ -133,6 +134,7 @@
   
   body {
     background-color: #F5F0E8 !important;
+    color-scheme: light !important;
     @apply text-foreground antialiased;
     font-family: "Outfit", system-ui, sans-serif;
     overscroll-behavior-y: none;
@@ -144,6 +146,14 @@
   #root {
     background-color: #F5F0E8 !important;
     overscroll-behavior: none;
+  }
+  
+  /* Forzar modo claro siempre */
+  html.dark,
+  html[data-theme="dark"],
+  body.dark,
+  body[data-theme="dark"] {
+    color-scheme: light !important;
   }
   
   button:not(:disabled),
