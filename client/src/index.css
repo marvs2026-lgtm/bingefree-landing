@@ -126,12 +126,22 @@
   html {
     scroll-behavior: smooth;
     @apply bg-background;
-    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    overflow-x: hidden;
   }
   
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "Outfit", system-ui, sans-serif;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  #root {
+    @apply bg-background;
     overscroll-behavior: none;
   }
   
