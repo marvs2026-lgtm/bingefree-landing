@@ -108,15 +108,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#F5F0E8]" style={{ backgroundColor: '#F5F0E8' }}>
-      {/* Fixed Background - Covers entire page */}
+      {/* Fixed Background - Solid cream color */}
       <div 
         className="fixed inset-0 -z-10"
         style={{
-          backgroundColor: '#F5F0E8',
-          backgroundImage: `url(${heroGradientBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundColor: '#F5F0E8'
         }}
       />
 
