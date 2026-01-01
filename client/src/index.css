@@ -125,14 +125,15 @@
   
   html {
     scroll-behavior: smooth;
-    @apply bg-background;
+    background-color: #F5F0E8 !important;
     overscroll-behavior-y: none;
     overscroll-behavior-x: none;
     overflow-x: hidden;
   }
   
   body {
-    @apply bg-background text-foreground antialiased;
+    background-color: #F5F0E8 !important;
+    @apply text-foreground antialiased;
     font-family: "Outfit", system-ui, sans-serif;
     overscroll-behavior-y: none;
     overscroll-behavior-x: none;
@@ -141,7 +142,7 @@
   }
   
   #root {
-    @apply bg-background;
+    background-color: #F5F0E8 !important;
     overscroll-behavior: none;
   }
   
