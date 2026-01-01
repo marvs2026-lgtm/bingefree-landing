@@ -107,13 +107,10 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F0E8]" style={{ backgroundColor: '#F5F0E8' }}>
-      {/* Fixed Background - Solid cream color */}
+    <div className="min-h-screen bg-background">
+      {/* Fixed Background */}
       <div 
-        className="fixed inset-0 -z-10"
-        style={{
-          backgroundColor: '#F5F0E8'
-        }}
+        className="fixed inset-0 -z-10 bg-background"
       />
 
       {/* Header */}
