@@ -125,11 +125,14 @@
   
   html {
     scroll-behavior: smooth;
+    @apply bg-background;
+    overscroll-behavior: none;
   }
   
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "Outfit", system-ui, sans-serif;
+    overscroll-behavior: none;
   }
   
   button:not(:disabled),

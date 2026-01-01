@@ -14,6 +14,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
 
+// Import images - using absolute paths
+const heroGradientBg = '/images/hero-gradient-bg.png';
+const glassesbluedog = '/images/glassesbluedog.png';
+const mockuppap = '/images/mockuppap.jpg';
+
 // Base count starts at 219
 const BASE_COUNT = 219;
 
@@ -108,7 +113,7 @@ export default function Home() {
         className="fixed inset-0 -z-10"
         style={{
           backgroundColor: '#F5F0E8',
-          backgroundImage: 'url(/images/hero-gradient-bg.png)',
+          backgroundImage: `url(${heroGradientBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -126,7 +131,7 @@ export default function Home() {
           >
             <div className="flex items-center gap-3">
               <img 
-                src="/images/glassesbluedog.png" 
+                src={glassesbluedog} 
                 alt="Binge Free mascot" 
                 className="w-10 h-10 object-contain"
               />
@@ -205,7 +210,7 @@ export default function Home() {
                       {/* Screen */}
                       <div className="relative rounded-[2rem] overflow-hidden bg-[#F5F0E8]">
                         <img 
-                          src="/images/mockuppap.jpg" 
+                          src={mockuppap} 
                           alt="Binge Free App" 
                           className="w-full h-auto"
                         />
@@ -228,7 +233,7 @@ export default function Home() {
                   >
                     <div className="brutal-card p-3">
                       <img 
-                        src="/images/glassesbluedog.png" 
+                        src={glassesbluedog} 
                         alt="Binge Free mascot" 
                         className="w-14 h-14 object-contain"
                       />
@@ -325,7 +330,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/images/glassesbluedog.png" 
+                src={glassesbluedog} 
                 alt="Binge Free" 
                 className="w-7 h-7 object-contain"
               />
